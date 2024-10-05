@@ -55,7 +55,6 @@ li {
 
 
     @include respond-to(tablet) {
-        height: 110px;
         margin-bottom: 16px;
     }
 

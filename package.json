@@ -2,13 +2,15 @@
   "name": "peach_test",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack serve --env develop"
+    "dev": "webpack serve --env develop",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.25.7",
     "@babel/preset-env": "^7.25.7",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.1.1",
     "html-loader": "^5.1.0",
     "mini-css-extract-plugin": "^2.9.1",
     "sass": "^1.79.4",
