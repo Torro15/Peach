@@ -510,7 +510,7 @@ li {
             line-height: 160%;
 
             &.active {
-                width: auto;
+                width: 50%;
                 @include hover-effect;
             }
         }
@@ -740,7 +740,7 @@ li {
                     justify-content: space-between;
                     align-items: center;
                     position: absolute;
-                    top: 15%;
+                    top: 23%;
 
                     & .h4-title {
                         @include h4-title;
@@ -766,7 +766,7 @@ li {
             color: $light;
             margin-left: 10px;
             position: absolute;
-            bottom: 35px;
+            top: 37%;
         }
     }
 
@@ -801,8 +801,6 @@ li {
             padding: 20px 10px;
         }
     }
-
-
 
     & p {
         width: 55%;
