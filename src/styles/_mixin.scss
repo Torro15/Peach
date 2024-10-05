@@ -1,8 +1,7 @@
 @mixin h2-title {
   font-family: $first-font;
   font-weight: 600;
-  font-size: 45px;
-
+  font-size: 56px;
 }
 
 @mixin h4-title {
@@ -18,9 +17,14 @@
   font-family: $first-font;
   color: $text-color;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
   transition: color $tr ease;
+  
+  @include respond-to(mobile) {
+    font-size: 14px;
+  }
+
 
   &:hover {
     color: $accent;

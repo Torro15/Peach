@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-family: 'Proxima Nova Condensed';
     src: url('../fonts/proximanovacond_regular.ttf') format('truetype');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-family: 'Proxima Nova Condensed';
     // src: url('../fonts/proxima_nova_condensed_semibold.eot');
     /* IE 9 Compatibility Mode */
     src: url('../fonts/proxima_nova_condensed_semibold.eot?#iefix') format('embedded-opentype'),
@@ -20,28 +20,26 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-family: 'Proxima Nova Condensed';
     src: url('../fonts/proximanovacond_black.otf') format('opentype');
     font-weight: 900;
 }
 
 
 @font-face {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     src: url('../fonts/proximanova_regular.ttf') format('truetype');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova';
     src: url('../fonts/proxima-nova-semibold.otf') format('opentype');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial';
     src: url('../fonts/arialmt.ttf') format('truetype');
     font-weight: 400;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
