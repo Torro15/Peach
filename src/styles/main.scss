@@ -53,7 +53,8 @@ li {
     min-height: 85px;
     font-family: $first-font;
 
-    @include respond-to(mobile) {
+
+    @include respond-to(tablet) {
         height: 110px;
         margin-bottom: 16px;
     }
@@ -65,10 +66,14 @@ li {
         align-items: center;
         padding: 30px 70px;
 
+        @include respond-to(tablet) {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
         @include respond-to(mobile) {
             width: 100%;
             padding: 16px 8px;
-            flex-wrap: wrap;
             gap: 16px;
         }
     }
@@ -107,6 +112,11 @@ li {
     padding: 158px 0;
     margin-bottom: 100px;
 
+    @include respond-to(tablet) {
+        height: 400px;
+        padding: 90px 0;
+    }
+
     @include respond-to(mobile) {
         height: 300px;
         background-size: cover;
@@ -124,6 +134,12 @@ li {
         margin-bottom: 73px;
         margin-left: 70px;
         letter-spacing: -2.5px;
+
+        @include respond-to(tablet) {
+            width: 100%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
 
         @include respond-to(mobile) {
             width: 100%;
@@ -149,6 +165,10 @@ li {
         font-weight: 600;
         font-size: 16px;
         transition: $tr;
+
+        @include respond-to(tablet) {
+            margin-left: 20px;
+        }
 
         @include respond-to(mobile) {
             width: 110px;
@@ -179,8 +199,12 @@ li {
         margin: 0 auto;
         box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
 
-        @include respond-to(mobile) {
+        @include respond-to(tablet) {
             width: 100%;
+            padding: 50px;
+        }
+
+        @include respond-to(mobile) {
             height: 181px;
             padding: 24px 5px;
         }
@@ -196,8 +220,11 @@ li {
         text-align: center;
         margin: 0 auto;
 
-        @include respond-to(mobile) {
+        @include respond-to(tablet) {
             width: 100%;
+        }
+
+        @include respond-to(mobile) {
             font-size: 16px;
         }
     }
@@ -208,11 +235,10 @@ li {
 }
 
 .statistic {
-    height: 287px;
+    height: auto;
     margin-bottom: 100px;
 
     @include respond-to(mobile) {
-        height: 242px;
         padding: 0 13px;
     }
 
@@ -225,11 +251,15 @@ li {
         gap: 180px;
         row-gap: 80px;
 
+
+        @include respond-to(tablet) {
+            column-gap: 55px;
+            row-gap: 30px;
+        }
+
         @include respond-to(mobile) {
-           
             column-gap: 15px;
             row-gap: 24px;
-
         }
     }
 
@@ -283,6 +313,10 @@ li {
     margin-bottom: 100px;
     position: relative;
 
+    @include respond-to(tablet) {
+        overflow: hidden;
+    }
+
     @include respond-to(mobile) {
         height: auto;
         overflow: hidden;
@@ -320,6 +354,11 @@ li {
         font-family: $first-font;
         font-weight: 600;
         font-size: 20px;
+
+        @include respond-to(tablet) {
+            font-size: 16px;
+            gap: 10px;
+        }
     }
 
     &__menu {
@@ -332,6 +371,11 @@ li {
         justify-content: space-between;
         align-items: center;
         color: $text-color;
+
+        @include respond-to(tablet) {
+            padding: 30px 10px;
+            gap: 25px;
+        }
 
         @include respond-to(mobile) {
             height: 95px;
@@ -347,6 +391,11 @@ li {
         list-style: none;
         gap: 30px;
 
+        @include respond-to(tablet) {
+            gap: 20px;
+        }
+
+
         @include respond-to(mobile) {
             width: 100%;
             overflow: hidden;
@@ -354,22 +403,29 @@ li {
     }
 
     &__town {
-        
         height: 272px;
         padding: 30px 69px;
         margin-top: -50px;
         box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.06);
         background-color: $light;
 
-          &.hidden {
-            display: none;
-          }
+        @include respond-to(tablet) {
+            padding: 30px 10px;
+        }
 
-          &.visible {
+        &.hidden {
+            display: none;
+        }
+
+        &.visible {
             display: flex;
             justify-content: space-between;
             width: 100%;
-          }
+
+            @include respond-to(tablet) {
+                gap: 10px;
+            }
+        }
 
         @include respond-to(mobile) {
             padding: 10px;
@@ -389,6 +445,10 @@ li {
                 font-size: 18px;
                 line-height: 160%;
 
+                @include respond-to(tablet) {
+                    font-size: 13px;
+                }
+
                 @include respond-to(mobile) {
                     font-size: 14px;
                 }
@@ -405,27 +465,22 @@ li {
             height: auto;
             background-color: $light;
             padding: 10px;
-            
-         
+
+
             & ul {
                 list-style-type: none;
-    
-                & li:first-child {
-                    font-weight: 600;
-                }
-    
+
                 & li {
                     font-family: $second-font;
                     font-weight: 400;
                     font-size: 18px;
                     line-height: 160%;
-    
+
                     @include respond-to(mobile) {
                         font-size: 14px;
                     }
-
                 }
-    
+
                 & li a {
                     color: $text-color;
                 }
@@ -434,29 +489,44 @@ li {
             &.hidden {
                 display: none;
             }
-           &.visible {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            row-gap: 15px;
-            column-gap: 30px;
-           }
+
+            &.visible {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                row-gap: 15px;
+                column-gap: 30px;
+            }
         }
-       
+
 
         &-main {
             display: flex;
             align-items: baseline;
             gap: 3px;
+            font-family: $second-font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+
+            &.active {
+                width: auto;
+                @include hover-effect;
+            }
         }
 
         &-hidden {
             display: none;
+
+            &.visible {
+                display: block;
+            }
         }
     }
 
     .city-item {
-       @include hover-effect;
+        @include hover-effect;
+        
     }
 
     #menu-icon {
@@ -481,12 +551,14 @@ li {
 
     &__img {
         margin: 0 auto;
-       
+        overflow: hidden;
+
         &.hidden {
             display: none;
         }
 
         &.visible {
+            width: 100%;
             display: block;
         }
     }
@@ -549,8 +621,11 @@ li {
     height: 936px;
     margin-bottom: 114px;
 
-    @include respond-to(mobile) {
+    @include respond-to(tablet) {
         height: auto;
+    }
+
+    @include respond-to(mobile) {
         margin-bottom: 50px;
     }
 
@@ -572,6 +647,12 @@ li {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 18px;
         row-gap: 23px;
+
+        @include respond-to(tablet) {
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
 
         @include respond-to(mobile) {
             display: none;
@@ -611,19 +692,20 @@ li {
                 background-image: url(../images/business/business-six.png);
             }
 
-          &:hover {
-            .item-box.hover.hidden {
-                display: block;
-                height: 100%;
-            }
-            .item-box {
-                display: none;
-
-                @include respond-to(mobile) {
+            &:hover {
+                .item-box.hover.hidden {
                     display: block;
+                    height: 100%;
+                }
+
+                .item-box {
+                    display: none;
+
+                    @include respond-to(mobile) {
+                        display: block;
+                    }
                 }
             }
-          }
         }
 
 
@@ -647,32 +729,32 @@ li {
 
             & .item-box {
                 &.mobile {
-                height: 100%;
-                opacity: 0.6;
-                position: relative;
-            }
-
-            &__title{
-                width: 95%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: absolute;
-                top: 15%;
-
-                & .h4-title {
-                    @include h4-title;
-                    font-size: 18px;
-                    margin-bottom: 10px;
+                    height: 100%;
+                    opacity: 0.6;
+                    position: relative;
                 }
 
-                & img {
-                    width: 36px;
-                    height: 36px;
+                &__title {
+                    width: 95%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: absolute;
+                    top: 15%;
+
+                    & .h4-title {
+                        @include h4-title;
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+
+                    & img {
+                        width: 36px;
+                        height: 36px;
+                    }
                 }
             }
-            }
-            
+
         }
 
         & .item-box__hidden {
@@ -764,6 +846,7 @@ li {
     height: 861px;
     margin-bottom: 90px;
 
+
     @include respond-to(mobile) {
         height: 922px;
     }
@@ -775,6 +858,12 @@ li {
         box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.06);
         padding: 66px 78px;
         margin: 0 auto;
+
+        @include respond-to(tablet) {
+            width: 100%;
+            height: auto;
+        }
+
         @include respond-to(mobile) {
             height: 975px;
             width: 100%;
@@ -788,6 +877,7 @@ li {
         @include h2-title;
         text-align: center;
         margin-bottom: 54px;
+
         @include respond-to(mobile) {
             font-size: 24px;
         }
@@ -798,6 +888,7 @@ li {
         justify-content: space-around;
         align-items: start;
         gap: 16px;
+
         @include respond-to(mobile) {
             flex-wrap: wrap;
             justify-content: center;
@@ -815,7 +906,7 @@ li {
             align-items: center;
 
             @include respond-to(mobile) {
-               width: 48%;
+                width: 48%;
             }
 
             & p {
@@ -831,7 +922,7 @@ li {
 
             @include respond-to(mobile) {
                 margin-bottom: 24px;
-             }
+            }
         }
 
         &.bottom {
@@ -851,7 +942,7 @@ li {
         @include respond-to(mobile) {
             width: 80px;
             height: 80px;
-         }
+        }
     }
 
     &__subtitle {
@@ -862,8 +953,8 @@ li {
         margin-bottom: 56px;
 
         @include respond-to(mobile) {
-           font-size: 22px;
-         }
+            font-size: 22px;
+        }
 
         & span {
             color: $red;
@@ -881,7 +972,7 @@ li {
 
     @include respond-to(mobile) {
         margin-bottom: 24px;
-     }
+    }
 
 }
 
@@ -921,7 +1012,7 @@ li {
     &-wrapper {
         padding-left: 70px;
 
-        @include respond-to(mobile) {
+        @include respond-to(tablet) {
             padding-left: 5px;
             padding-right: 5px;
         }
@@ -929,18 +1020,18 @@ li {
 
     &-slide {
 
-        @include respond-to(mobile) {
+        @include respond-to(tablet) {
             width: 100%;
-            height: auto; 
+            height: auto;
         }
 
         & img {
             width: 1100px;
             height: 100%;
 
-            @include respond-to(mobile) {
+            @include respond-to(tablet) {
                 width: 100%;
-                height: auto; 
+                height: auto;
             }
         }
     }

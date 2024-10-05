@@ -1,16 +1,16 @@
 @mixin h2-title {
-    font-family: $first-font;
-    font-weight: 600;
-    font-size: 45px;
-   
+  font-family: $first-font;
+  font-weight: 600;
+  font-size: 45px;
+
 }
 
 @mixin h4-title {
-    font-family: $first-font;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    color: $light;
+  font-family: $first-font;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: $light;
 }
 
 
@@ -23,24 +23,34 @@
   transition: color $tr ease;
 
   &:hover {
-      color: $accent;
+    color: $accent;
   }
 
   &.active {
-      color: $accent;
-      border-bottom: 2px solid $accent;
-      margin-bottom: -30px;
-      @include respond-to(mobile) {
-          margin-bottom: 8px;
-      }
+    color: $accent;
+    border-bottom: 2px solid $accent;
+    margin-bottom: -30px;
+
+    @include respond-to(tablet) {
+      margin-bottom: -23px;
+    }
+
+    @include respond-to(mobile) {
+      margin-bottom: 8px;
+    }
   }
 }
 
 @mixin respond-to($breakpoint) {
-    @if $breakpoint == tablet {
-      @media (max-width: 768px) { @content; }
-    } @else if $breakpoint == mobile {
-      @media (max-width: 480px) { @content; }
+  @if $breakpoint ==tablet {
+    @media (max-width: 875px) {
+      @content;
     }
   }
 
+  @else if $breakpoint ==mobile {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}

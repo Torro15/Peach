@@ -15,10 +15,10 @@
                     <img src="./images/logo.svg" alt="Logo">
                 </div>
                 <ul class="nav__menu-list">
-                    <li><a class="nav__link" href="#">Облачные решения</a></li>
-                    <li><a class="nav__link" href="#">Кибербезопасность</a></li>
-                    <li><a class="nav__link" href="#">Импортозамещение</a></li>
-                    <li><a class="nav__link" href="#">Цифровая трансформация</a></li>
+                    <li><a class="nav__link" href="#cloud">Облачные решения</a></li>
+                    <li><a class="nav__link" href="#security">Кибербезопасность</a></li>
+                    <li><a class="nav__link" href="#import">Импортозамещение</a></li>
+                    <li><a class="nav__link" href="#tranformation">Цифровая трансформация</a></li>
                 </ul>
             </div>
         </div>
@@ -96,131 +96,187 @@
                     <li data-city="d-v" class="city-item">Дальний Восток</li>
                 </ul>
             </div>
-            <div id="dropdown-menu" class="office__town hidden">
-                <ul>
-                    <li><a href="#">Москва</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Центр</a></li>
-                    <li><a href="#">Воронеж</a></li>
-                    <li><a href="#">Ярославль</a></li>
-                    <li><a href="#">Белгород</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Северо-Запад</a></li>
-                    <li><a href="#">Санкт-Петербург</a></li>
-                    <li><a href="#">Калининград</a></li>
+            <div id="menu" class="menu">
+                <div id="dropdown-menu" class="office__town hidden">
+                    <ul>
+                        <li><a href="#">Москва</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Центр</a></li>
+                        <li><a href="#">Воронеж</a></li>
+                        <li><a href="#">Ярославль</a></li>
+                        <li><a href="#">Белгород</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Северо-Запад</a></li>
+                        <li><a href="#">Санкт-Петербург</a></li>
+                        <li><a href="#">Калининград</a></li>
 
-                </ul>
-                <ul>
-                    <li><a href="#">Юг</a></li>
-                    <li><a href="#">Ростов-на-Дону</a></li>
-                    <li><a href="#">Краснодар</a></li>
-                    <li><a href="#">Волгоград</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Волга</a></li>
-                    <li><a href="#">Казань</a></li>
-                    <li><a href="#">Самара</a></li>
-                    <li><a href="#">Уфа</a></li>
-                    <li><a href="#">Оренбург</a></li>
-                    <li><a href="#">Нижний Новгород</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Юг</a></li>
+                        <li><a href="#">Ростов-на-Дону</a></li>
+                        <li><a href="#">Краснодар</a></li>
+                        <li><a href="#">Волгоград</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Волга</a></li>
+                        <li><a href="#">Казань</a></li>
+                        <li><a href="#">Самара</a></li>
+                        <li><a href="#">Уфа</a></li>
+                        <li><a href="#">Оренбург</a></li>
+                        <li><a href="#">Нижний Новгород</a></li>
 
-                </ul>
-                <ul>
-                    <li><a href="#">Урал</a></li>
-                    <li><a href="#">Екатеринбург</a></li>
-                    <li><a href="#">Челябинск</a></li>
-                    <li><a href="#">Пермь</a></li>
-                    <li><a href="#">Сургут</a></li>
-                    <li><a href="#">Тюмень</a></li>
-                    <li><a href="#">Ижевск</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Сибирь</a></li>
-                    <li><a href="#">Новосибирск</a></li>
-                    <li><a href="#">Омск</a></li>
-                    <li><a href="#">Томск</a></li>
-                    <li><a href="#">Красноярск</a></li>
-                    <li><a href="#">Иркутск</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Дальний Восток</a></li>
-                    <li><a href="#">Хабаровск</a></li>
-                    <li><a href="#">Владивосток</a></li>
-                </ul>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Урал</a></li>
+                        <li><a href="#">Екатеринбург</a></li>
+                        <li><a href="#">Челябинск</a></li>
+                        <li><a href="#">Пермь</a></li>
+                        <li><a href="#">Сургут</a></li>
+                        <li><a href="#">Тюмень</a></li>
+                        <li><a href="#">Ижевск</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Сибирь</a></li>
+                        <li><a href="#">Новосибирск</a></li>
+                        <li><a href="#">Омск</a></li>
+                        <li><a href="#">Томск</a></li>
+                        <li><a href="#">Красноярск</a></li>
+                        <li><a href="#">Иркутск</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Дальний Восток</a></li>
+                        <li><a href="#">Хабаровск</a></li>
+                        <li><a href="#">Владивосток</a></li>
+                    </ul>
+                </div>
+                <div id="menu-dropdown" class="office__town-mobile hidden">
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Москва</h4>
+                            <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Москва</li>
+                        </ul>
+                    </div>
+
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Центр</h4>
+                            <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Воронеж</li>
+                            <li>Ярославль</li>
+                            <li>Белгород</li>
+                        </ul>
+                    </div>
+
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Северо-Запад</h4>
+                            <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Санкт-Петербург</li>
+                            <li>Калининград</li>
+                        </ul>
+                    </div>
+
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Юг</h4>
+                            <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Ростов-на-Дону</li>
+                            <li>Краснодар</li>
+                            <li>Волгоград</li>
+                        </ul>
+                    </div>
+
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Волга</h4> <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Казань</li>
+                            <li>Самара</li>
+                            <li>Уфа</li>
+                            <li>Оренбург</li>
+                            <li>Нижний Новгород</li>
+                        </ul>
+                    </div>
+
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Урал</h4> <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Екатеринбург</li>
+                            <li>Челябинск</li>
+                            <li>Пермь</li>
+                            <li>Сургут</li>
+                            <li>Тюмень</li>
+                            <li>Ижевск</li>
+                        </ul>
+                    </div>
+
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Сибирь</h4>
+                            <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Новосибирск</li>
+                            <li>Омск</li>
+                            <li>Томск</li>
+                            <li>Красноярск</li>
+                            <li>Иркутск</li>
+                        </ul>
+                    </div>
+
+                    <div class="office__town-item">
+                        <div class="office__town-main">
+                            <h4>Дальний Восток</h4>
+                            <svg class="button-mobile" width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                            </svg>
+                        </div>
+                        <ul class="office__town-hidden">
+                            <li>Хабаровск</li>
+                            <li>Владивосток</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-            <div id="menu-dropdown" class="office__town-mobile hidden">
-                <ul>
-                    <li><a class="office__town-main" href="#">Москва <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                </ul>
-                <ul>
-                    <li><a class="office__town-main" href="#">Центр <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                    <li><a class="office__town-hidden" href="#">Воронеж</a></li>
-                    <li><a class="office__town-hidden" href="#">Ярославль</a></li>
-                    <li><a class="office__town-hidden" href="#">Белгород</a></li>
-                </ul>
-                <ul>
-                    <li><a class="office__town-main" href="#">Северо-Запад <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                    <li><a class="office__town-hidden" href="#">Санкт-Петербург</a></li>
-                    <li><a class="office__town-hidden" href="#">Калининград</a></li>
-                </ul>
-                <ul>
-                    <li><a class="office__town-main" href="#">Юг <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                    <li><a class="office__town-hidden" href="#">Ростов-на-Дону</a></li>
-                    <li><a class="office__town-hidden" href="#">Краснодар</a></li>
-                    <li><a class="office__town-hidden" href="#">Волгоград</a></li>
-                </ul>
-                <ul>
-                    <li><a class="office__town-main" href="#">Волга <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                    <li><a class="office__town-hidden" href="#">Казань</a></li>
-                    <li><a class="office__town-hidden" href="#">Самара</a></li>
-                    <li><a class="office__town-hidden" href="#">Уфа</a></li>
-                    <li><a class="office__town-hidden" href="#">Оренбург</a></li>
-                    <li><a class="office__town-hidden" href="#">Нижний Новгород</a></li>
 
-                </ul>
-                <ul>
-                    <li><a class="office__town-main" href="#">Урал <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                    <li><a class="office__town-hidden" href="#">Екатеринбург</a></li>
-                    <li><a class="office__town-hidden" href="#">Челябинск</a></li>
-                    <li><a class="office__town-hidden" href="#">Пермь</a></li>
-                    <li><a class="office__town-hidden" href="#">Сургут</a></li>
-                    <li><a class="office__town-hidden" href="#">Тюмень</a></li>
-                    <li><a class="office__town-hidden" href="#">Ижевск</a></li>
-                </ul>
-                <ul>
-                    <li><a class="office__town-main" href="#">Сибирь <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                    <li><a class="office__town-hidden" href="#">Новосибирск</a></li>
-                    <li><a class="office__town-hidden" href="#">Омск</a></li>
-                    <li><a class="office__town-hidden" href="#">Томск</a></li>
-                    <li><a class="office__town-hidden" href="#">Красноярск</a></li>
-                    <li><a class="office__town-hidden" href="#">Иркутск</a></li>
-                </ul>
-                <ul>
-                    <li><a class="office__town-main" href="#">Дальний Восток <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
-                      </svg></a></li>
-                    <li><a class="office__town-hidden" href="#">Хабаровск</a></li>
-                    <li><a class="office__town-hidden" href="#">Владивосток</a></li>
-                </ul>
-            </div>
 
-            
             <div id="map-container" class="office__map">
                 <img id="all-map" src="./images/map/map-all.svg" alt="Map" class="office__img visible hidden">
                 <img id="moscow-map" src="./images/map/map-moscow.svg" alt="Map" class="office__img hidden">
@@ -266,7 +322,7 @@
                     </div>
                 </div>
 
-                <div class="business__box-item two">
+                <div id="security" class="business__box-item two">
                     <div class="item-box">
                         <p>Кибербезопасность</p>
                     </div>
@@ -277,7 +333,7 @@
                             информационной безопасности и аттестации. </p>
                     </div>
                 </div>
-                <div class="business__box-item three">
+                <div id="import" class="business__box-item three">
                     <div class="item-box">
                         <p>Импортозамещение</p>
                     </div>
@@ -288,7 +344,7 @@
                             оборудование собственного производства. </p>
                     </div>
                 </div>
-                <div class="business__box-item four">
+                <div id="cloud" class="business__box-item four">
                     <div class="item-box ">
                         <p>Облачные решения</p>
                     </div>
@@ -300,7 +356,7 @@
                             масштабирования бизнеса своих клиентов. Подписки, услуги, трансформация.</p>
                     </div>
                 </div>
-                <div class="business__box-item five">
+                <div id="tranformation" class="business__box-item five">
                     <div class="item-box">
                         <p>Цифровая трансформация
                             и разработка ПО</p>
