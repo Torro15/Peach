@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__menu">
+                <div class="nav__menu-logo">
+                    <img src="./images/logo.svg" alt="Logo">
+                </div>
+                <ul class="nav__menu-list">
+                    <li><a class="nav__link" href="#">Облачные решения</a></li>
+                    <li><a class="nav__link" href="#">Кибербезопасность</a></li>
+                    <li><a class="nav__link" href="#">Импортозамещение</a></li>
+                    <li><a class="nav__link" href="#">Цифровая трансформация</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Поставщик услуг цифровой трансформации и кибербезопасности</h1>
+            <a href="#" class="btn header__btn">На сайт</a>
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="container">
+            <div class="info__block">
+                <h2 class="info__title">
+                    <span>Softline</span> – ведущий поставщик IT-решений и сервисов.* Мы предлагаем комплексные
+                    IT-решения, облака,
+                    программное и аппаратное обеспечение, решения по цифровой трансформации и кибербезопасности, а также
+                    широкий спектр IT-услуг.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistic">
+        <div class="container">
+            <div class="statistic__box">
+
+                <div class="statistic__item">
+                    <span>>30 лет</span>
+                    <p>на IT-рынке</p>
+                </div>
+                <div class="statistic__item">
+                    <span>4600</span>
+                    <p>сотрудников в России</p>
+                </div>
+                <div class="statistic__item">
+                    <span>25</span>
+                    <p>городов России</p>
+                </div>
+                <div class="statistic__item">
+                    <span>2000+</span>
+                    <p>разработчиков</p>
+                </div>
+                <div class="statistic__item">
+                    <span>3000+</span>
+                    <p>сотрудников ежегодно проходят оценку и обучение
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="office">
+        <div class="container">
+            <div class="overlay hidden"></div>
+            <div class="office__menu">
+                <div class="office__dropdown">
+                    <div class="office__dropdown-btn">Офисы Softline<svg id="menu-icon" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.10156 7.99683L12.1016 16.0179L22.1016 7.99683" stroke="#444444"
+                                stroke-width="3" />
+                        </svg></div>
+                </div>
+                <ul class="office__list">
+                    <li data-city="all" class="city-item active">Все</li>
+                    <li data-city="moscow" class="city-item">Москва</li>
+                    <li data-city="centr" class="city-item">Центр</li>
+                    <li data-city="north-west" class="city-item">Северо-&nbsp;Запад</li>
+                    <li data-city="south" class="city-item">Юг</li>
+                    <li data-city="volga" class="city-item">Волга</li>
+                    <li data-city="ural" class="city-item">Урал</li>
+                    <li data-city="sibir" class="city-item">Сибирь</li>
+                    <li data-city="d-v" class="city-item">Дальний Восток</li>
+                </ul>
+            </div>
+            <div id="dropdown-menu" class="office__town hidden">
+                <ul>
+                    <li><a href="#">Москва</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Центр</a></li>
+                    <li><a href="#">Воронеж</a></li>
+                    <li><a href="#">Ярославль</a></li>
+                    <li><a href="#">Белгород</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Северо-Запад</a></li>
+                    <li><a href="#">Санкт-Петербург</a></li>
+                    <li><a href="#">Калининград</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">Юг</a></li>
+                    <li><a href="#">Ростов-на-Дону</a></li>
+                    <li><a href="#">Краснодар</a></li>
+                    <li><a href="#">Волгоград</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Волга</a></li>
+                    <li><a href="#">Казань</a></li>
+                    <li><a href="#">Самара</a></li>
+                    <li><a href="#">Уфа</a></li>
+                    <li><a href="#">Оренбург</a></li>
+                    <li><a href="#">Нижний Новгород</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">Урал</a></li>
+                    <li><a href="#">Екатеринбург</a></li>
+                    <li><a href="#">Челябинск</a></li>
+                    <li><a href="#">Пермь</a></li>
+                    <li><a href="#">Сургут</a></li>
+                    <li><a href="#">Тюмень</a></li>
+                    <li><a href="#">Ижевск</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Сибирь</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Омск</a></li>
+                    <li><a href="#">Томск</a></li>
+                    <li><a href="#">Красноярск</a></li>
+                    <li><a href="#">Иркутск</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Дальний Восток</a></li>
+                    <li><a href="#">Хабаровск</a></li>
+                    <li><a href="#">Владивосток</a></li>
+                </ul>
+            </div>
+            <div id="menu-dropdown" class="office__town-mobile hidden">
+                <ul>
+                    <li><a class="office__town-main" href="#">Москва <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                </ul>
+                <ul>
+                    <li><a class="office__town-main" href="#">Центр <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                    <li><a class="office__town-hidden" href="#">Воронеж</a></li>
+                    <li><a class="office__town-hidden" href="#">Ярославль</a></li>
+                    <li><a class="office__town-hidden" href="#">Белгород</a></li>
+                </ul>
+                <ul>
+                    <li><a class="office__town-main" href="#">Северо-Запад <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                    <li><a class="office__town-hidden" href="#">Санкт-Петербург</a></li>
+                    <li><a class="office__town-hidden" href="#">Калининград</a></li>
+                </ul>
+                <ul>
+                    <li><a class="office__town-main" href="#">Юг <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                    <li><a class="office__town-hidden" href="#">Ростов-на-Дону</a></li>
+                    <li><a class="office__town-hidden" href="#">Краснодар</a></li>
+                    <li><a class="office__town-hidden" href="#">Волгоград</a></li>
+                </ul>
+                <ul>
+                    <li><a class="office__town-main" href="#">Волга <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                    <li><a class="office__town-hidden" href="#">Казань</a></li>
+                    <li><a class="office__town-hidden" href="#">Самара</a></li>
+                    <li><a class="office__town-hidden" href="#">Уфа</a></li>
+                    <li><a class="office__town-hidden" href="#">Оренбург</a></li>
+                    <li><a class="office__town-hidden" href="#">Нижний Новгород</a></li>
+
+                </ul>
+                <ul>
+                    <li><a class="office__town-main" href="#">Урал <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                    <li><a class="office__town-hidden" href="#">Екатеринбург</a></li>
+                    <li><a class="office__town-hidden" href="#">Челябинск</a></li>
+                    <li><a class="office__town-hidden" href="#">Пермь</a></li>
+                    <li><a class="office__town-hidden" href="#">Сургут</a></li>
+                    <li><a class="office__town-hidden" href="#">Тюмень</a></li>
+                    <li><a class="office__town-hidden" href="#">Ижевск</a></li>
+                </ul>
+                <ul>
+                    <li><a class="office__town-main" href="#">Сибирь <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                    <li><a class="office__town-hidden" href="#">Новосибирск</a></li>
+                    <li><a class="office__town-hidden" href="#">Омск</a></li>
+                    <li><a class="office__town-hidden" href="#">Томск</a></li>
+                    <li><a class="office__town-hidden" href="#">Красноярск</a></li>
+                    <li><a class="office__town-hidden" href="#">Иркутск</a></li>
+                </ul>
+                <ul>
+                    <li><a class="office__town-main" href="#">Дальний Восток <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4L7.4641 0.25H0.535898L4 4Z" fill="#444444" />
+                      </svg></a></li>
+                    <li><a class="office__town-hidden" href="#">Хабаровск</a></li>
+                    <li><a class="office__town-hidden" href="#">Владивосток</a></li>
+                </ul>
+            </div>
+
+            
+            <div id="map-container" class="office__map">
+                <img id="all-map" src="./images/map/map-all.svg" alt="Map" class="office__img visible hidden">
+                <img id="moscow-map" src="./images/map/map-moscow.svg" alt="Map" class="office__img hidden">
+                <img id="centr-map" src="./images/map/map-centr.svg" alt="Map" class="office__img hidden">
+                <img id="north-west-map" src="./images/map/map-s-z.svg" alt="Map" class="office__img hidden">
+                <img id="south-map" src="./images/map/map-south.svg" alt="Map" class="office__img hidden">
+                <img id="volga-map" src="./images/map/map-volga.svg" alt="Map" class="office__img hidden">
+                <img id="ural-map" src="./images/map/map-ural.svg" alt="Map" class="office__img hidden">
+                <img id="sibir-map" src="./images/map/map-sibir.svg" alt="Map" class="office__img hidden">
+                <img id="d-v-map" src="./images/map/map-d-v.svg" alt="Map" class="office__img hidden">
+            </div>
+        </div>
+    </section>
+
+    <section class="mission">
+        <div class="container">
+            <div class="mission__info">
+                <h2 class="mission__title">
+                    Миссия Softline
+                </h2>
+                <p class="mission__text">
+                    Мы помогаем организациям трансформироваться, работать эффективно и безопасно в условиях цифровой
+                    экономики.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="business">
+        <div class="container">
+            <h2 class="business__title">Направления бизнеса</h2>
+            <div class="business__box">
+                <div class="business__box-item one">
+                    <div class="item-box">
+                        <p>Решения Softline</p>
+                    </div>
+                    <div class="item-box hover hidden">
+                        <h4 class="h4-title">Решения Softline</h4>
+                        <p>ГК Softline предлагает клиентам собственную
+                            линейку оборудования (ПК, серверы, торговое
+                            оборудование и проч.), разработку программных продуктов, облачных решений, решений в области
+                            информационной безопасности.</p>
+                    </div>
+                </div>
+
+                <div class="business__box-item two">
+                    <div class="item-box">
+                        <p>Кибербезопасность</p>
+                    </div>
+                    <div class="item-box hover hidden">
+                        <h4 class="h4-title">Кибербезопасность</h4>
+                        <p>Softline обладает всеми необходимыми
+                            государственными лицензиями для организации проектов по
+                            информационной безопасности и аттестации. </p>
+                    </div>
+                </div>
+                <div class="business__box-item three">
+                    <div class="item-box">
+                        <p>Импортозамещение</p>
+                    </div>
+                    <div class="item-box hover hidden">
+                        <h4 class="h4-title">Импортозамещение</h4>
+                        <p>ГК Softline обладает широчайшим портфелем решений
+                            и услуг для импортозамещения, включая ПО и
+                            оборудование собственного производства. </p>
+                    </div>
+                </div>
+                <div class="business__box-item four">
+                    <div class="item-box ">
+                        <p>Облачные решения</p>
+                    </div>
+                    <div class="item-box hover hidden">
+                        <h4 class="h4-title">Облачные решения</h4>
+                        <p>Softline использует современные облачные решения
+                            как российских, так и международных вендоров
+                            для
+                            масштабирования бизнеса своих клиентов. Подписки, услуги, трансформация.</p>
+                    </div>
+                </div>
+                <div class="business__box-item five">
+                    <div class="item-box">
+                        <p>Цифровая трансформация
+                            и разработка ПО</p>
+                    </div>
+
+                    <div class="item-box hover hidden">
+                        <h4 class="h4-title">Цифровая трансформация
+                            и разработка ПО</h4>
+                        <p>Softline использует современные технологи и новые
+                            возможности для увеличения
+                            производительности бизнеса заказчика. В штате ГК Softline - 2000+ разработчиков, которые
+                            трансформируют ПО под нужды конкретного предприятия.</p>
+                    </div>
+                </div>
+                <div class="business__box-item six">
+                    <div class="item-box">
+                        <p>Техническая поддержка Softline</p>
+                    </div>
+
+                    <div class="item-box hover hidden">
+                        <h4 class="h4-title">Техническая поддержка Softline</h4>
+                        <p>200+ инженеров, 24 часа в сутки, 7 дней в неделю,
+                            12 месяцев в году, сервисное партнерство с
+                            30+ мировыми производителями.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- для мобильной версии -->
+            <div class="business__box mobile">
+                <div id="block1" class="business__box-item one expandableBlock">
+                    <div class="item-box mobile">
+                        <div class="item-box__title">
+                            <h4 class="h4-title">Решения Softline</h4>
+                            <img class="icon-menu" src="./images/icons/dropdown-white.svg" alt="Dropdown">
+                        </div>
+                    </div>
+                    <div class="item-box__hidden additionalText">ГК Softline предлагает клиентам собственную
+                        линейку оборудования (ПК, серверы, торговое
+                        оборудование и проч.), разработку программных продуктов, облачных решений, решений в
+                        области
+                        информационной безопасности.</div>
+                </div>
+
+                <div id="block2" class="business__box-item two expandableBlock">
+                    <div class="item-box mobile">
+                        <div class="item-box__title">
+                            <h4 class="h4-title">Кибербезопасность</h4>
+                            <img class="icon-menu" src="./images/icons/dropdown-white.svg" alt="Dropdown">
+                        </div>
+                    </div>
+                    <div class="item-box__hidden additionalText">Softline обладает всеми необходимыми
+                        государственными лицензиями для организации проектов по
+                        информационной безопасности и аттестации. </div>
+                </div>
+                <div id="block3" class="business__box-item three expandableBlock">
+                    <div class="item-box mobile">
+                        <div class="item-box__title">
+                            <h4 class="h4-title">Импортозамещение</h4>
+                            <img class="icon-menu" src="./images/icons/dropdown-white.svg" alt="Dropdown">
+                        </div>
+                    </div>
+                    <div class="item-box__hidden additionalText">ГК Softline обладает широчайшим портфелем
+                        решений и услуг для импортозамещения, включая ПО и
+                        оборудование собственного производства. </div>
+                </div>
+                <div id="block4" class="business__box-item four expandableBlock">
+                    <div class="item-box mobile">
+                        <div class="item-box__title">
+                            <h4 class="h4-title">Облачные решения</h4>
+                            <img class="icon-menu" src="./images/icons/dropdown-white.svg" alt="Dropdown">
+                        </div>
+                    </div>
+                    <div class="item-box__hidden additionalText">Softline использует современные облачные
+                        решения как российских, так и международных вендоров
+                        для
+                        масштабирования бизнеса своих клиентов. Подписки, услуги, трансформация.</div>
+                </div>
+
+                <div id="block5" class="business__box-item five expandableBlock">
+                    <div class="item-box mobile">
+                        <div class="item-box__title">
+                            <h4 class="h4-title">Цифровая трансформация
+                                и разработка ПО</h4>
+                            <img class="icon-menu" src="./images/icons/dropdown-white.svg" alt="Dropdown">
+                        </div>
+                    </div>
+                    <div class="item-box__hidden additionalText">Softline использует современные технологи и
+                        новые возможности для увеличения
+                        производительности бизнеса заказчика. В штате ГК Softline - 2000+ разработчиков, которые
+                        трансформируют ПО под нужды конкретного предприятия.</div>
+                </div>
+
+                <div id="block6" class="business__box-item six expandableBlock">
+                    <div class="item-box mobile ">
+                        <div class="item-box__title">
+                            <h4 class="h4-title">Техническая поддержка Softline</h4>
+                            <img class="icon-menu" src="./images/icons/dropdown-white.svg" alt="Dropdown">
+                        </div>
+                    </div>
+                    <div class="item-box__hidden additionalText">200+ инженеров, 24 часа в сутки, 7 дней в
+                        неделю, 12 месяцев в году, сервисное партнерство с
+                        30+ мировыми производителями.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__block">
+                <h2 class="advantages__title">Компенсационный пакет
+                </h2>
+                <div class="advantages__box top">
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/dms.svg" alt="dms">
+                        <p>ДМС</p>
+                    </div>
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/birthday.svg" alt="birthday">
+                        <p id="expandableBlock">Выходной в день рождения</p>
+                    </div>
+
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/mobile.svg" alt="mobile">
+                        <p>Корпоративная мобильная связь</p>
+                    </div>
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/sport.svg" alt="sport">
+                        <p>Корпоративные скидки на спорт</p>
+                    </div>
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/lti.svg" alt="LTI">
+                        <p>LTI</p>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <h3 class="advantages__subtitle">Программа дополнительной мотивации <span>доплата 12% от суммы</span>
+                </h3>
+                <div class="advantages__box bottom">
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/printer.svg" alt="printer">
+                        <p>Оргтехники</p>
+                    </div>
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/dms.svg" alt="dms">
+                        <p>ДМС</p>
+                    </div>
+                    <div class="advantages__box-item">
+                        <img class="advantages__img" src="./images/icons/home.svg" alt="home">
+                        <p>Ипотеки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="corporate">
+        <div class="container">
+            <div class="corporate__title">Корпоративная жизнь</div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/swiper/slide-1.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="./images/swiper/slide-2.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="./images/swiper/slide-3.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="./images/swiper/slide-4.png" alt="slide"></div>
+                    <div class="swiper-slide"><img src="./images/swiper/slide-5.png" alt="slide"></div>
+                </div>
+                <div class="custom-navigation">
+                    <button class="swiper-button-prev"><img src="./images/button-prev.svg" alt="prev button"></button>
+                    <button class="swiper-button-next"><img src="./images/button-next.svg" alt="next button"></button>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

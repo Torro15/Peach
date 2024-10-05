@@ -1,0 +1,46 @@
+@mixin h2-title {
+    font-family: $first-font;
+    font-weight: 600;
+    font-size: 45px;
+   
+}
+
+@mixin h4-title {
+    font-family: $first-font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: $light;
+}
+
+
+@mixin hover-effect {
+  font-family: $first-font;
+  color: $text-color;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color $tr ease;
+
+  &:hover {
+      color: $accent;
+  }
+
+  &.active {
+      color: $accent;
+      border-bottom: 2px solid $accent;
+      margin-bottom: -30px;
+      @include respond-to(mobile) {
+          margin-bottom: 8px;
+      }
+  }
+}
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == tablet {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == mobile {
+      @media (max-width: 480px) { @content; }
+    }
+  }
+
